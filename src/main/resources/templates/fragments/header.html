@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
+    <link href="../../static/css/style.css" th:href="@{css/style.css}" rel="stylesheet" media="screen"/>
+    <script src="../../static/js/jquery.min.js" th:src="@{/js/jquery.min.js}"/>
+    <script src="../../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"/>
+</head>
+
+<body>
+<div class="container">
+    <div th:fragment="header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              			<span class="sr-only">Toggle navigation</span>
+              			<span class="icon-bar"></span>
+              			<span class="icon-bar"></span>
+              			<span class="icon-bar"></span>
+            		</button>
+                    <a class="navbar-brand" href="#" th:href="@{/}">Inicio</a>
+                </div>                
+                <div id="navbar" class="navbar-collapse collapse">
+                	<ul class="nav navbar-nav">
+                        <li><a href="#" th:href="@{/contactos}">Contactos</a></li>
+                        <li><a href="#" th:href="@{/contactos/nuevo}">Crear Nuevo Contacto</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <div class="row text-center">
+                <div class="">
+                    <h2>Lista de Contactos - Bienvenid@</h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <img src="../../static/images/boot.png" width="50" th:src="@{/images/boot.png}"/>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

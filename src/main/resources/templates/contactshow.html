@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <title>Detalle del contacto</title>
+
+    <!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
+</head>
+<body>
+<div class="container padding-bottom-50">
+    <!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+
+    <h2>Detalles del Contacto</h2>
+        <div>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Id:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static" th:text="${contact.id}">Id</p></div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Nombres:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static" th:text="${contact.firstName}">Ejemplo nombres</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Apellidos:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static" th:text="${contact.lastName}">Ejemplo apellidos</p>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label class="col-sm-2 control-label">Email:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static" th:text="${contact.email}">Ejemplo email</p></div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Tel&eacute;fono m&oacute;vil:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static" th:text="${contact.mobilePhone}">Ejemplo tel&eacute;fono m&oacute;vil</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Direcci&oacute;n:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static" th:text="${contact.address}">Ejemplo direcci&oacute;n</p>
+                    </div>
+                </div> 
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Asunto:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static" th:text="${contact.subject}">Ejemplo asunto</p>
+                    </div>
+                </div>  
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Mensaje:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static" th:text="${contact.message}">Ejemplo mensaje</p>
+                    </div>
+                </div>
+                
+                <div class="row text-center">
+                	<a href="#" class="btn btn-success" th:href="@{/contactos}">Volver</a>               	
+            	</div>                 
+            </form>
+    </div>
+</div>
+
+</body>
+</html>

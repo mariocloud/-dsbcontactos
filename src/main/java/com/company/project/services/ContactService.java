@@ -8,7 +8,7 @@ public interface ContactService {
 
     Contact getContactById(Integer id);
 
-    Contact saveContact(Contact product);
+    Contact saveContact(Contact contact);
 
     void deleteContact(Integer id);
 
